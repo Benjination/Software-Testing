@@ -1,11 +1,16 @@
 public class HW1_a {
     
+    /*
+     * 1. Side note, probably not related to assignment, the word static was not included
+     * on the provided code, and needed to be added. Main is a static method, and can 
+     * only call other static methods. 
+     */
     public static int findLast(int[] x, int y) {
         //if (x == null) {
         //    throw new NullPointerException("Input array is null");
         //}
         /*
-         * The problem with the original code is inside the for loop. i>0 won't work
+         * 2. The problem with the original code is inside the for loop. i>0 won't work
          * It needs to be able to check the element at array 0 when i = 0. By changing
          * this to i>=0, it will only fail when the counter hits -1. 
          */
