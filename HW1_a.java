@@ -13,6 +13,7 @@ public class HW1_a {
          * 2. The problem with the original code is inside the for loop. i>0 won't work
          * It needs to be able to check the element at array 0 when i = 0. By changing
          * this to i>=0, it will only fail when the counter hits -1. 
+         * Fixed issue. 
          */
         for (int i = x.length - 1; i >= 0; i--) {
             if (x[i] == y) {
