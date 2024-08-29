@@ -1,6 +1,8 @@
-public class HW1_b {
 
-    public int countPositive(int[] x) {
+public class HW1_b
+{
+
+    public static int countPositive(int[] x) {
         int count = 0;
         for(int i = 0;i < x.length;i++)
         {
@@ -9,7 +11,7 @@ public class HW1_b {
              * which should not be included in the count. By changing this to x[i] > 0, it would disclude any xeros
              * and make the count correct
              */
-            if(x[i] >= 0) //fault
+            if(x[i] > 0) //fault
             {
                 count++;
             }
@@ -17,9 +19,9 @@ public class HW1_b {
         return count;
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         //index two enters program into error state
-        int[] a = {-1, 2, 0, 2};
+        int[] a = {-4, 2, 0, 2};
         int c = countPositive(a);
         
         System.out.println(c);
