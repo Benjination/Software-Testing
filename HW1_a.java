@@ -14,7 +14,7 @@ public class HW1_a {
          * It needs to be able to check the element at array 0 when i = 0. By changing
          * this to i>=0, it will only fail when the counter hits -1. 
          */
-        for (int i = x.length - 1; i > 0; i--) {
+        for (int i = x.length - 1; i >= 0; i--) {
             if (x[i] == y) {
                 return i;
             }

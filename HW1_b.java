@@ -1,6 +1,6 @@
 public class HW1_b {
 
-    public static int countPositive(int[] x) {
+    public int countPositive(int[] x) {
         int count = 0;
         for(int i = 0;i < x.length;i++)
         {
@@ -17,7 +17,7 @@ public class HW1_b {
         return count;
     }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         //index two enters program into error state
         int[] a = {-1, 2, 0, 2};
         int c = countPositive(a);
